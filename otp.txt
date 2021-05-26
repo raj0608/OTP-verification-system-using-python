@@ -15,7 +15,7 @@ def check():
 def sendsms():
     number=x.get()
     
-    client = Client('AC0db0e5474ae846aa8caa3560ec4dd2f5','22ba8900f349654b1a078cc6b2cb06de')
+    client = Client('Account SID','Auth Token') 
     
     client.messages.create(from_='+15203379216',to=number , body="Your OTP is:"+otp)
     
